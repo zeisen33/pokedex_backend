@@ -44,4 +44,8 @@ class Pokemon < ApplicationRecord
     has_many :items, dependent: :destroy
     has_many :poke_moves, dependent: :destroy
     has_many :moves, through: :poke_moves, source: :move, dependent: :destroy
+
+    def self.types
+      TYPES
+    end
 end
