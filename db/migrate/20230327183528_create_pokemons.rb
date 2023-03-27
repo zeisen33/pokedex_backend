@@ -7,7 +7,7 @@ class CreatePokemons < ActiveRecord::Migration[7.0]
       t.integer :defense, null: false
       t.string :poke_type, null: false
       t.string :image_url, null: false
-      t.boolean :captured, null: false
+      t.boolean :captured, null: false, default: false
 
       t.timestamps
     end

@@ -1,2 +1,0 @@
-class Pokem < ApplicationRecord
-end
